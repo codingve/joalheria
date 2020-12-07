@@ -1,0 +1,1 @@
+Para mitigar o problema uma solução inicial seria fazer todo o trabalho de investigação afim de verificar os possiveis motivos para a lentidao, verificar o ficheiro de registro, verificar a saude do grupo e da instancia e grupos suspensos, rever definição de configutação etc caso o problema persista existe a opção de substituir o AWS SQS por 
