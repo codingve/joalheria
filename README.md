@@ -11,6 +11,11 @@ Api documents:
 http://localhost:5000/docs
 ```
 
+Api tests:
+```sh
+pytest joalheria/tests/ -v --cov=joalheria
+```
+
 ## REST API
 | Endpoint | Método| Descrição |
 |----------|--------|------------|
