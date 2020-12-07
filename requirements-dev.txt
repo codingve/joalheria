@@ -1,0 +1,9 @@
+black
+flake8
+flask-debugtoolbar
+flask-shell-iphyton
+flask-restful
+flask
+pytest
+pytest-flask
+flask_swagger_ui

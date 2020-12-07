@@ -1,0 +1,98 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "sean",
+    "version": "0.1.0",
+    "title": "Joalheria-Joia-Preciosa",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+
+  "basePath": "/api/v1/",
+
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Product Request",
+      "description": "Example API for requesting and return product sale balance requests"
+    }
+  ],
+  "paths": {
+    "/product": {
+      "parameters": [
+        {
+          "name": "price",
+          "in": "query",
+          "required": true,
+          "description": "Price of the product what you want request",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "tags": [
+          "Product Request"
+        ],
+        "summary": "Get product sale balance with given price",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "price",
+            "required": true,
+            "description": "Product Request Price",
+            "schema": {
+              "$ref": "#/components/schemas/price"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/productRequest"
+            }
+          },
+          "400": {
+            "description": "Failed. Misunderstood Request."
+          },
+          "404": {
+            "description": "Failed. Book request not found."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "price": {
+        "properties": {
+          "price": {
+            "type": "string"
+          }
+        }
+      },
+      "productRequest": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "format": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "number"
+          }
+        }
+      }       
+    }
+  }
+}

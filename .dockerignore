@@ -1,0 +1,6 @@
+__pycache__/
+.vscode/
+README.md/
+htmlcov/
+.mypy_cache/
+.pytest_cache/
