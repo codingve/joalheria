@@ -14,7 +14,7 @@ http://localhost:5000/docs
 ## REST API
 | Endpoint | Método| Descrição |
 |----------|--------|------------|
-| /produtos?price=??? | GET  | Receive the product price and return the discounts, commission and profit.|
+| /produtos?price=??? | GET  | Receive the product price (with dot for monetary separator) and return the discounts, commission and profit.|
 
 
 #### Response (exemple price with discount):
