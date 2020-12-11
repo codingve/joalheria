@@ -19,7 +19,7 @@ pytest joalheria/tests/ -v --cov=joalheria
 ## REST API
 | Endpoint | Método| Descrição |
 |----------|--------|------------|
-| /produtos?price=??? | GET  | Receive the product price (with dot for monetary separator) and return the discounts, commission and profit.|
+| /product?price=??? | GET  | Receive the product price (with dot for monetary separator) and return the discounts, commission and profit.|
 
 
 #### Response (exemple price with discount):
