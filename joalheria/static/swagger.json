@@ -79,17 +79,25 @@
       "productRequest": {
         "type": "object",
         "properties": {
-          "title": {
+          "gross_value": {
             "type": "string",
             "format": "string"
           },
-          "email": {
+          "sale_discount": {
             "type": "string",
-            "format": "email"
+            "format": "string"
           },
-          "timestamp": {
+          "sale_price": {
             "type": "string",
-            "format": "number"
+            "format": "string"
+          },
+          "commission": {
+            "type": "string",
+            "format": "string"
+          },
+          "profit": {
+            "type": "string",
+            "format": "string"
           }
         }
       }       
