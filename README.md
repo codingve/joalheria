@@ -32,5 +32,3 @@ pytest joalheria/tests/ -v --cov=joalheria
 {"gross_value": "856,99", "sale_discount": "0,00", "sale_price": "856,99", "commission": "42,85","profit": "325,66"}
 ```
 
-NOTE:
-Infelizmente não pude fazer todos os tratamentos que gostaria de fazer, quem sabe em uma próxima. Bye u all.
